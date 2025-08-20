@@ -1,0 +1,19 @@
+Class: Category
+  - Id: int
+  - Name: string
+  - Attributes: List<Attribute>
+  - Methods: AddAttribute(), RemoveAttribute()
+
+Class: Attribute
+  - Id: int
+  - Name: string
+  - DataType: string
+  - CategoryId: int
+
+Class: Product
+  - Id: int
+  - Name: string
+  - CategoryId: int
+  - Price: decimal
+  - ProductAttributes: Dictionary<Attribute, Value>
+  - Methods: AddAttributeValue(), UpdateAttributeValue()
